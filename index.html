@@ -157,7 +157,7 @@
         <header>
             <h1>Privacy Policy</h1>
             <h2 style="border: none; margin: 10px 0; font-size: 1.3em;">Electric Meter Bill Tracker</h2>
-            <p class="last-updated">Last Updated: April 19, 2026</p>
+            <p class="last-updated">Last Updated: May 2, 2026</p>
         </header>
 
         <div class="toc">
@@ -190,17 +190,18 @@
 
             <h3>2.1 Account Information</h3>
             <p>
-                When you create and use an account in Electric Meter Bill Tracker, we collect information needed to provide the service, such as:
+                When you create and use an account in Electric Meter Bill Tracker, we collect information needed to provide the service. Authentication is provided through Google Sign-In via Firebase Authentication.
             </p>
             <ul>
-                <li>Full name</li>
-                <li>Email address</li>
+                <li>Full name (from your Google account, when available)</li>
+                <li>Email address (from your Google account)</li>
+                <li>Profile photo URL (from your Google account, when available)</li>
                 <li>Account role and service-access status</li>
                 <li>Account creation, update, and last-login metadata</li>
-                <li>Authentication credentials processed by Firebase Authentication</li>
+                <li>Authentication tokens/identifiers processed by Firebase Authentication</li>
             </ul>
             <p>
-                We do not view or store your plain-text password inside the App database. Sign-in is handled through Google Firebase Authentication.
+                The App does not provide direct email/password sign-up or sign-in. We do not store passwords in the App database.
             </p>
 
             <h3>2.2 Meter Information</h3>
@@ -314,7 +315,7 @@
                 <li><strong>Encryption:</strong> All data is encrypted using industry-standard protocols (HTTPS/TLS) during transmission</li>
                 <li><strong>Access Control:</strong> Only authenticated users can access their own data through security rules</li>
                 <li><strong>Firestore Security Rules:</strong> Role-based access control ensures users can only access their own records</li>
-                <li><strong>Secure Authentication:</strong> Firebase Authentication with email/password authentication</li>
+                <li><strong>Secure Authentication:</strong> Firebase Authentication with Google Sign-In</li>
                 <li><strong>Administrative Controls:</strong> Administrative access is restricted to authorized personnel for service support and review tasks</li>
             </ul>
 
